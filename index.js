@@ -6,7 +6,7 @@
 
 Alpine.data("index", () => {
   return {
-    name: "lucasjandrey5",
+    name: "",
     getGitData(name) {
       fetch("https://api.github.com/users/" + name)
         .then((res) => {
