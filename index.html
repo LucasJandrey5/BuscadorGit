@@ -22,12 +22,7 @@
     ></script>
   </head>
   <body>
-    <img
-      class="github-image"
-      src="./images/Octicons-mark-github.svg"
-      fill="white"
-      alt=""
-    />
+    <img class="github-image" src="./images/github.svg" fill="white" alt="" />
 
     <main x-data="index">
       <h1></h1>
@@ -64,6 +59,20 @@
           <template x-for="repo in current_repos">
             <li class="repo-item">
               <a :href="repo.html_url" x-text="repo.name" target="_blank"></a>
+              <div class="repo-info-box">
+                <div class="info">
+                  <img class="" src="./images/star.svg" />
+                  <p x-text="repo.stargazers_count"></p>
+                </div>
+                <div class="info">
+                  <img class="" src="./images/eyes.png" />
+                  <p x-text="repo.watchers_count""></p>
+                </div>
+                <div class="info">
+                  <img class="" src="./images/notebook.png" />
+                  <p x-text="repo.language"></p>
+                </div>
+              </div>
             </li>
           </template>
         </div>
