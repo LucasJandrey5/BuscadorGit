@@ -1,0 +1,11 @@
+@media (min-width: 770px) {
+  .repos-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .repo-item {
+    margin-inline: 15px;
+  }
+}

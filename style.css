@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-weight: 300;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+input[type="search"]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type="search"]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(211, 211, 211, 0.26);
+  margin-block: 1rem;
+}
+
+body {
+  background-color: #25292f;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main {
+  width: 90%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.github-image {
+  max-width: 80px;
+  margin: 3rem 0 2rem 0;
+}
+
+.input-box {
+  height: 50px;
+  outline: #25292f;
+  background-color: #25292f0a;
+  padding: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.input-box input {
+  height: 100%;
+  background: none;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+.input-box button {
+  background: none;
+  outline: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.profile-box {
+  margin-top: 25px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: rgb(42, 180, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-img img {
+  border-radius: 50%;
+  width: 90%;
+  height: 90%;
+}
+
+.profile-box h2 {
+  margin: 1.2rem 0 0.2rem 0;
+}
+
+.repos-box {
+  margin-top: 40px;
+}
+
+.repo-item {
+  background-color: #25292f0a;
+  border-radius: 15px;
+  padding: 15px;
+  margin-top: 15px;
+}
